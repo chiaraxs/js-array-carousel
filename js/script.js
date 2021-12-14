@@ -54,3 +54,16 @@ outputButtonRight.addEventListener('click', function (){
     outputImage.src = imagesList [currentIndex];
 });
 
+
+// aggiungo click su freccia left -> scorre indietro
+// il carousel è pienamente funzionante
+
+outputButtonLeft.addEventListener('click', function (){
+    currentIndex--;
+    if (currentIndex < 0){
+        currentIndex = titleList.length -1;
+    }
+    outputChangeTitle.innerHTML = titleList[currentIndex];
+    outputChangeParagraph.innerHTML = paragraphList[currentIndex];
+    outputImage.src = imagesList [currentIndex];
+});
