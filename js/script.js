@@ -35,6 +35,9 @@ const outputButtonRight = document.getElementById('button-right');
 
 outputButtonRight.addEventListener('click', function (){
     currentIndex++;
+    if (currentIndex > titleList.length -1){
+        currentIndex = 0;
+    }
     outputChangeTitle.innerHTML = titleList[currentIndex];
     outputChangeParagraph.innerHTML = paragraphList[currentIndex];
 })

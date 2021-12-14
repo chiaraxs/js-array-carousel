@@ -14,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 30px;
+    text-align: center;
 }
 
 .carousel-box{
@@ -33,3 +34,8 @@ button{
 button .fas {
     font-size: 50px;
 } 
+
+/* TEXT STYLE */
+h2{
+    margin-top: 200px;
+}
